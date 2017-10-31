@@ -51,3 +51,6 @@ bot.command(
 ) do |event|
 	event.respond roll_chance(event)
 end
+
+# Run app
+bot.run

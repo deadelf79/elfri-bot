@@ -19,8 +19,8 @@ require './funcs.rb'
 # Setup the bot
 bot = Discordrb::Commands::CommandBot.new(
 	token: app_token,
-	client_id: Config::Bot.client_id,
-	prefix: Config::Bot.prefix,
+	client_id: 357454858049290241,
+	# prefix: Config::Bot.prefix,
 	no_permission_message: "PVP Bot can't write any message on this channel!#{@crlf}"+
 		"Check settings in 'config.ini' or in Discord server/channel settings."
 )

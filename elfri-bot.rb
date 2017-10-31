@@ -21,7 +21,7 @@ bot = Discordrb::Commands::CommandBot.new(
 	token: app_token,
 	client_id: 357454858049290241,
 	# prefix: Config::Bot.prefix,
-	no_permission_message: "PVP Bot can't write any message on this channel!#{@crlf}"+
+	no_permission_message: "Redenik Bot can't write any message on this channel!#{@crlf}"+
 		"Check settings in 'config.ini' or in Discord server/channel settings."
 )
 
@@ -53,4 +53,6 @@ bot.command(
 end
 
 # Run app
+channel_id = 374157870507360267
+bot.send_message(channel_id, 'Bot is now active!')
 bot.run
